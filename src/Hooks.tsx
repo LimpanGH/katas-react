@@ -24,6 +24,7 @@ function Counter() {
     );
 }
 
+
 // todo useEffect: Används för att utföra side-effects i funktionella komponenter, till exempel att prenumerera på data, hantera DOM-uppdateringar, etc.
 
 import React, { useState, useEffect } from 'react';
@@ -104,6 +105,7 @@ function Räknare() {
 // * Denna funktion kommer att köras efter varje renderingscykel och kan innehålla asynkron kod eller andra sidoeffekter.
 // * Om du anger en array av beroenden som det andra argumentet kommer useEffect() att köras igen bara om någon av beroendena har förändrats sedan föregående renderingscykel. 
 // * Om du lämnar detta argument tomt kommer useEffect() att köras efter varje renderingscykel.
+// * Används tex med APIer och andra saker utanför REACT
 
 // Exempel 1. useEffect:
 import React, { useState, useEffect } from 'react';
