@@ -44,6 +44,10 @@
 
 // * React-komponent under huven är en funktion som gör saker tex renderar ut saker i DOMen
 
+// todo React components very often follow this structure:
+// * 1. Hooks at the top
+// * 2. Helper-functions or code that is parsing data
+// * 3. A return with all your JSX
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
