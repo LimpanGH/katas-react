@@ -1,7 +1,7 @@
 // ! Vanliga imports -------------------------------------------------------
 // * Bas-imports:
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 // * Hook imports:
 import React, { useState } from 'react';
@@ -11,26 +11,20 @@ import React, { useReducer } from 'react';
 import React, { useCallback } from 'react';
 import React, { useMemo } from 'react';
 
-
 // ! Komponent-anatomi -------------------------------------------------------
-function exempelFunktion({props1,props2,props3}) {
-    
-    // 1. Hooks måste stå högst upp
-    
-    // 2. Vilken javascript som helst, mappa, filtrer, requesta
-
-    // 3. Rendera med JSX: 
-    //    Här kan du skriva javascript men det måste vara inom { }, och du bör inte använda: 
-    //    map, for-loop, forEach, map, filter, reduce, find.
-    //    
-    //    Undvik även:
-    //    Direkt manipulation av DOM, 
-    //    Anropa setState utanför livscykelmetoderna,
-    //    Direkta HTTP-anrop,
-    //    Funktioner som orsakar bieffekter som setTimeout och setInterval,
-    //    Skriva långa kodblock direkt: 
-
-
+function exempelFunktion({ props1, props2, props3 }) {
+  // 1. Hooks måste stå högst upp
+  // 2. Vilken javascript som helst, mappa, filtrer, requesta
+  // 3. Rendera med JSX:
+  //    Här kan du skriva javascript men det måste vara inom { }, och du kan använda dessa men det bör göras försiktigt:
+  //    map, for-loop, forEach, map, filter, reduce, find.
+  //
+  //    Undvik:
+  //    Direkt manipulation av DOM,
+  //    Anropa setState utanför livscykelmetoderna,
+  //    Direkta HTTP-anrop,
+  //    Funktioner som orsakar bieffekter som setTimeout och setInterval,
+  //    Skriva långa kodblock direkt:
 }
 
 // ! Info  ---------------------------------------------------------------------
@@ -99,3 +93,31 @@ root.render(<h1>Hello world</h1>);
 
 // * 2. Passing a Variable to render()
 
+import React, { useState, useEffect } from 'react';
+
+const MyComponent = () => {
+  // State declaration example
+  const [count, setCount] = useState(0);
+
+  // Effect declaration example (useEffect hook)
+  useEffect(() => {
+    // Code to run on component mount
+    console.log('Component mounted');
+
+    // Code to run on component unmount (cleanup)
+    return () => {
+      console.log('Component unmounted');
+    };
+  }, []); // The empty dependency array means this effect runs once on mount
+
+  // JSX content of the component
+  return (
+    <div>
+      <h1>My React Component</h1>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+};
+
+export default MyComponent;
