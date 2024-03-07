@@ -1,3 +1,37 @@
+// ! Vanliga imports -------------------------------------------------------
+// * Bas-imports:
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+
+// * Hook imports:
+import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import React, { useContext } from 'react';
+import React, { useReducer } from 'react';
+import React, { useCallback } from 'react';
+import React, { useMemo } from 'react';
+
+
+// ! Komponent-anatomi -------------------------------------------------------
+function exempelFunktion({props1,props2,props3}) {
+    
+    // 1. Hooks måste stå högst upp
+    
+    // 2. Vilken javascript som helst, mappa, filtrer, requesta
+
+    // 3. Rendera med JSX: 
+    //    Här kan du skriva javascript men det måste vara inom { }, och du bör inte använda: 
+    //    map, for-loop, forEach, map, filter, reduce, find.
+    //    
+    //    Undvik även:
+    //    Direkt manipulation av DOM, 
+    //    Anropa setState utanför livscykelmetoderna,
+    //    Direkta HTTP-anrop,
+    //    Funktioner som orsakar bieffekter som setTimeout och setInterval,
+    //    Skriva långa kodblock direkt: 
+
+
+}
 
 // ! Info  ---------------------------------------------------------------------
 // * React.js is a JavaScript library developed by engineers at Facebook. Here are just a few of the reasons why people choose to program with React:
